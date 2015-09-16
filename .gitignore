@@ -1,0 +1,5 @@
+.idea
+.jshintignore
+.npmignore
+node_modules
+*.log

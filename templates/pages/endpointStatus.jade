@@ -3,7 +3,14 @@ section.page.pageOne
 
   p Current status of all application endpoints.
 
-  ul.list-group(data-hook="endpoint-list")
+  table.container
+    thead
+      tr
+        th Name
+        th URL
+        th Status
+
+    tbody(data-hook="endpoint-list")
 
   .buttons.btn-group
     button.btn.btn-default(data-hook="fetch") .fetch()

@@ -5,17 +5,24 @@ module.exports = AmpersandModel.extend({
     props: {
         name: ['string', true, ''],
         url: ['string', true, ''],
-        code: 'number'
+        code: 'number',
+        alive: 'boolean'
     },
     derived: {
         status: {
-            deps: ['code'],
+            deps: ['alive'],
             fn: function () {
-                if (this.code === 200) {
+                if (this.alive) {
                     return "background-color: #99FF99";
                 } else {
                     return "background-color: #FF9999";
                 }
+            }
+        },
+        shortUrl: {
+            deps: ['url'],
+            fn: function () {
+                return this.url.substr(0, 100) + '...';
             }
         }
     }

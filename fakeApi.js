@@ -151,20 +151,20 @@ var endpoints = [
         code: 200,
         alive: true
     },
-    //{
-    //    name: 'aus-cashout',
-    //    url: 'http://cos-aco-service.au.app.betfair/',
-    //    method: 'get',
-    //    code: 200,
-    //    alive: true
-    //},
-    //{
-    //    name: 'uk-cashout',
-    //    url: 'http://cos-uco-service.au.app.betfair/',
-    //    method: 'get',
-    //    code: 200,
-    //    alive: true
-    //},
+    {
+        name: 'aus-cashout',
+        url: 'http://cos-aco-service.au.app.betfair/api/readonly/v1/marketsWithCashout?marketIds=[2.101313779,2.101320618]',
+        method: 'get',
+        code: 200,
+        alive: true
+    },
+    {
+        name: 'uk-cashout',
+        url: 'http://cos-uco-service.au.app.betfair/api/readonly/v1/marketsWithCashout?marketIds=[1.121205058,1.121195284,1.121205088,1.121195254]',
+        method: 'get',
+        code: 200,
+        alive: true
+    },
     {
         name: 'uk-strands',
         url: 'https://beta.betfair.com.au/uk/strands/api/eds/racing-navigation/v1?eventId=27299056&eventTypeId=7&navigationType=marketsbyevent',

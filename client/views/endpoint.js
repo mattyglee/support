@@ -12,6 +12,11 @@ module.exports = View.extend({
             type: 'attribute',
             hook: 'endpoint-status',
             name: 'style'
+        },
+        'model.url': {
+            type: 'attribute',
+            hook: 'url',
+            name: 'href'
         }
     }
 });

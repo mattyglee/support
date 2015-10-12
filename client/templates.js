@@ -28,7 +28,7 @@
 
     // includes\endpoint.jade compiled template
     templatizer["includes"]["endpoint"] = function tmpl_includes_endpoint() {
-        return '<tr data-hook="endpoint-status" style="background-color: #99FF99" class="endpoint"><td data-hook="name"></td><td data-hook="url"></td><td data-hook="code"></td></tr>';
+        return '<tr data-hook="endpoint-status" style="background-color: #99FF99" class="endpoint"><td data-hook="name"></td><td><a data-hook="url" target="_blank"></a></td><td data-hook="code"></td></tr>';
     };
 
     // includes\formInput.jade compiled template
@@ -38,7 +38,7 @@
 
     // pages\endpointStatus.jade compiled template
     templatizer["pages"]["endpointStatus"] = function tmpl_pages_endpointStatus() {
-        return '<section class="page pageOne"><h2>Endpoint Status</h2><p>Current status of all application endpoints.</p><table class="container"><thead><tr><th>Name</th><th>URL</th><th>Status</th></tr></thead><tbody data-hook="endpoint-list"></tbody></table><div class="buttons btn-group"><button data-hook="fetch" class="btn btn-default">.fetch()</button></div></section>';
+        return '<section class="page pageOne"><h2>Endpoint Status</h2><p>Current status of all application endpoints.</p><table class="container"><thead><tr><th>Name</th><th>URL</th><th>Status</th></tr></thead><tbody data-hook="endpoint-list"></tbody></table><div class="buttons btn-group"><button data-hook="fetch" class="btn btn-default">REFRESH</button></div></section>';
     };
 
     // pages\home.jade compiled template
